@@ -123,3 +123,30 @@ nav ul {
     align-items: center; /* Center vertically (optional) */
     /* ... other styles ... */
   }
+  /* Ajuste de las imágenes destacadas */
+.imagen-destacada {
+    max-width: 90%; /* Limita el ancho de las imágenes */
+    height: auto; /* Conserva la proporción original */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 4px solid #C41E3A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 10px auto; /* Centra las imágenes con un margen */
+    display: block; /* Asegura que se comporten como bloques */
+}
+
+/* Contenedor para agrupar imágenes */
+.imagenes-contenedor {
+    display: flex; /* Usa Flexbox para alinear imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se acomoden en varias filas */
+    gap: 20px; /* Espacio entre imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    margin: 20px 0;
+}
+
+.imagenes-contenedor img {
+    flex: 1 1 calc(45% - 20px); /* Cada imagen ocupa un 45% del ancho disponible */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajusta el contenido al espacio disponible */
+}
